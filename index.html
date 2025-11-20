@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juliana Nieto Cárdenas - Computer Scientist</title>
+  <link rel="stylesheet" href="terminal.css">
+  <style>
+    .wrapper {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+    .header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    .terminal-prompt {
+      color: var(--accent);
+      font-weight: bold;
+    }
+    .command-line {
+      margin: 10px 0;
+    }
+    .social-links {
+      margin: 30px 0;
+    }
+    .links-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .links-buttons button {
+      flex: 1;
+      min-width: 140px;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 15px 0;
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border: 1px solid var(--accent);
+      border-radius: 3px;
+      font-size: 0.85em;
+      margin-left: 8px;
+    }
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .links-buttons {
+        justify-content: center;
+      }
+      .links-buttons button {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <figure style="margin: 0;">
+        <img src="img/pfp_linked.jpeg" alt="Juliana Nieto Cárdenas">
+        <figcaption>juliana@cs:~$</figcaption>
+      </figure>
+      <div>
+        <div class="command-line">
+          <span class="terminal-prompt">$</span> whoami
+        </div>
+        <h1>Computer Scientist</h1>
+        <p>I like building things with code.</p>
+      </div>
+    </header>
+
+    <!-- Social Links Section -->
+    <section class="social-links">
+      <div class="command-line">
+        <span class="terminal-prompt">$</span> cat ~/.links
+      </div>
+      <div class="links-buttons">
+        <button onclick="window.open('https://github.com/junietoc', '_blank', 'noopener,noreferrer')">GitHub</button>
+        <button onclick="window.open('https://www.linkedin.com/in/juliana-nieto-c%C3%A1rdenas-5ba3491b6/', '_blank', 'noopener,noreferrer')">LinkedIn</button>
+        <button onclick="window.open('https://x.com/thatgirlonabike', '_blank', 'noopener,noreferrer')">Twitter/X</button>
+        <button onclick="window.open('https://scholar.google.com/citations?hl=en&user=IYDHGgcAAAAJ&view_op=list_works', '_blank', 'noopener,noreferrer')">Google Scholar</button>
+        <button onclick="window.open('https://girlonabicycle.bearblog.dev/', '_blank', 'noopener,noreferrer')">Blog</button>
+      </div>
+    </section>
+
+    <blockquote>
+      <p><strong>Technical Skills:</strong> Python • PyTorch • JAX • C++ • SQL • Java • Spring Boot • Flask  • LangChain • Git/GitHub</p>
+    </blockquote>
+
+    <main>
+      <section>
+        <div class="command-line">
+          <span class="terminal-prompt">$</span> cat education.txt
+        </div>
+        <h2>Education</h2>
+        <ul>
+          <li><strong>B.Sc., Computer Science</strong> | Universidad Nacional de Colombia <span class="status-badge">Expected Nov 2025</span><br>
+          <mark>GPA: 4.3/5.0</mark></li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section>
+        <div class="command-line">
+          <span class="terminal-prompt">$</span> ls research/
+        </div>
+        <h2>Research Experience</h2>
+        
+        <h3>GNN Research Project @ Universidad Nacional de Colombia <span class="status-badge">Sept 2025 – Present</span></h3>
+        <p><em>Mentors: Prof. Humberto Sarria & Petar Veličković (external mentor)</em></p>
+        <ul>
+          <li>Investigating graph neural network approaches with an emphasis on practical evaluation.</li>
+          <li>Developing a reproducible <kbd>JAX</kbd> / <kbd>Haiku</kbd> / <kbd>Optax</kbd> pipeline with custom components to benchmark alternatives.</li>
+        </ul>
+
+        <h3>Research Intern @ Purdue University <span class="status-badge">Aug 2024 – Feb 2025</span></h3>
+        <p><em>PIs: Prof. <a href="https://andresbejarano.name/">Andres Bejarano</a> and <a href="https://www.cs.purdue.edu/homes/dickeye/">Ethan Dickey</a></em></p>
+        <ul>
+          <li>Designed a Python-based app using <code>GPT-4o</code> to support competitive programming students through self-explanation and reflective prompts.</li>
+          <li>Applied prompt engineering to align AI guidance with programming learning objectives.</li>
+        </ul>
+
+        <h3>Research Project @ Universidad Nacional de Colombia <span class="status-badge">Feb 2024 – Jun 2024</span></h3>
+        <p><em>Mentored by: Prof. <a href="https://sites.google.com/site/marcoavellamedina/home">Marco Avella</a></em></p>
+        <ul>
+          <li>Studied <strong>differential privacy algorithms</strong> in statistical inference with user-level privacy constraints in a collaborative project with Columbia University</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section>
+        <div class="command-line">
+          <span class="terminal-prompt">$</span> cat publications.bib
+        </div>
+        <h2>Publications</h2>
+        
+        <blockquote>
+          <p>
+            <strong>Owlgorithm: Supporting Self-Regulated Learning in Competitive Programming through LLM-Driven Reflection.</strong><br>
+            <em><strong>Juliana Nieto-Cardenas</strong>, Erin Kramer, Peter Kurto, Ethan Dickey, Andres Bejarano.</em><br>
+            <em>To appear in Proceedings of the 57th ACM Technical Symposium on Computer Science Education V. 2 (SIGCSE TS 2026).</em><br>
+            <mark>Status: Accepted (ERT track)</mark> • <strong>Venue:</strong> SIGCSE TS 2026
+          </p>
+        </blockquote>
+      </section>
+
+      <hr>
+
+      <section>
+        <div class="command-line">
+          <span class="terminal-prompt">$</span> history | grep "work"
+        </div>
+        <h2>Work Experience</h2>
+        
+        <h3>Software Developer @ Amadeus <span class="status-badge">April 2025 – Oct 2025</span></h3>
+        <ul>
+          <li>Part of the Disruption team, developing <code>C++</code> code, implementing business logic, and designing unit and regression tests.</li>
+        </ul>
+
+        <h3>Software Engineer Intern @ Twilio <span class="status-badge">June 2024 – August 2024</span></h3>
+        <ul>
+          <li>Built a service for geolocating phone numbers across 10+ countries.</li>
+          <li>Designed scalable APIs with <kbd>Spring Boot</kbd> for reliability and efficiency.</li>
+        </ul>
+
+        <h3>Software Engineer @ Dept. of Statistics, UNAL <span class="status-badge">Oct 2023 – Dec 2023</span></h3>
+        <ul>
+          <li>Collaborated on a data governance strategy for health information using the <strong>DAMA-DMBOK</strong> framework.</li>
+        </ul>
+
+        <h3>Full Stack Engineer @ Instituto de Investigaciones Jurídico Sociales UNAL <span class="status-badge">April 2021 – July 2021</span></h3>
+        <ul>
+          <li>Built a <kbd>Flask</kbd> web app integrating citation database APIs to automate research paper collection.</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section>
+        <div class="command-line">
+          <span class="terminal-prompt">$</span> ls -la projects/
+        </div>
+        <h2>Projects</h2>
+        
+        <h3>mc² Talent <span class="status-badge">May 2025</span></h3>
+        <ul>
+          <li>Contributed to an AI-powered <strong>talent-matching platform</strong>, enhancing search functionality and user onboarding experience.</li>
+        </ul>
+
+        <h3>Owlgorithm <span class="status-badge">Dec 2024</span></h3>
+        <ul>
+          <li>Built a GenAI-based web platform that generates <mark>Bloom's Taxonomy–aligned reflective prompts</mark> for competitive programming learning.</li>
+        </ul>
+
+        <h3>Secret Safe <span class="status-badge">Nov 2022</span></h3>
+        <ul>
+          <li>Developed a Python desktop app implementing <kbd>RSA</kbd>, <kbd>ElGamal</kbd>, and <kbd>AES</kbd> cryptosystems.</li>
+        </ul>
+
+        <h3>COVID in Colombia <span class="status-badge">Nov 2022</span></h3>
+        <ul>
+          <li>Analyzed <mark>6M+ COVID case records</mark> using <code>PostgreSQL</code> and <code>Scikit-Learn</code> to identify epidemiological patterns and predict case trends.</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section>
+        <div class="command-line">
+          <span class="terminal-prompt">$</span> cat leadership.txt
+        </div>
+        <h2>Leadership</h2>
+        
+        <h3>Búhos ICPC UNAL Competitive Programming Club <span class="status-badge">April 2023 – Present</span></h3>
+        <ul>
+          <li>Volunteered teaching algorithm lessons.</li>
+          <li>Qualified for the <mark>National Competition</mark> and <mark>Maratona Feminina de Programação (MFP)</mark>.</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section>
+        <div class="command-line">
+          <span class="terminal-prompt">$</span> echo $LANG
+        </div>
+        <h2>Languages</h2>
+        <ul>
+          <li><kbd>Spanish</kbd> (Native) • <kbd>English</kbd> (Proficient)</li>
+        </ul>
+      </section>
+
+      <footer style="margin-top: 50px; opacity: 0.7; text-align: center;">
+        <p class="command-line">
+          <span class="terminal-prompt">$</span> Last login: <time>November 2025</time>
+        </p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

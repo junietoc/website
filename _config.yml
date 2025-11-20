@@ -1,5 +1,5 @@
 title: Juliana Nieto Cárdenas 
 logo: /img/pfp_linked.jpeg
 #description: text below image
-show_downloads: true
-theme: jekyll-theme-minimal
+#show_downloads: true
+#theme: jekyll-theme-minimal  # Not needed with custom HTML
